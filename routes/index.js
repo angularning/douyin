@@ -28,10 +28,12 @@ router.get('/test', function(req, res, next) {
     rp(options)
         .then(function (parsedBody) {
             // POST succeeded...
-            res.send(parsedBody)
+            res.send(parsedBody);
         })
         .catch(function (err) {
             // POST failed...
+            res.send(err);
+
         });
 
 
