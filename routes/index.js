@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-
 router.get('/test', function(req, res, next) {
     var r = generateRandom().toString();
     var url=req.query.url;
